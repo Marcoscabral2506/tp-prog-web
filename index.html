@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Learning</title> 
+
+	<!--img de carrito-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	
+	<!--img de lupa-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--estilos-->
+  	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+  	<!--Slider jquery-->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  	<!--Js para boton de menu-->
+  	<script src="js/main.js"></script>
+
+</head>
+<body>
+	<!--Barra de header-->
+	<header class="topnav">
+		<h1>SIMPLE LEARNING</h1>
+		  <div class="search-container">
+		    <form>
+		      <input type="text" placeholder="Busca.." name="search">
+		      <button type="submit"><i class="fa fa-search"></i></button>
+		    </form>
+  		</div>
+  		<div id="carrito">
+  			<div>
+				<span id="carro" class="glyphicon glyphicon-shopping-cart"><span id="numero">2</span></span>
+			</div>	
+		</div>
+	</header>
+
+	<!--barra de navegacion-->
+	
+	<nav id="nav-menu" class="menu">
+					<ul>
+						<li><a href="#">Menu</a></li>
+						<li><a href="#">Contacto</a></li>
+						<li><a href="#">Gift carf</a></li>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					    <i class="fa fa-bars"></i>
+					  </a>
+					</ul>
+	</nav>
+	
+	<script>
+		function myFunction() {
+	  var x = document.getElementById("nav-menu");
+	  if (x.className === "menu") {
+	    x.className += " responsive";
+	  } else {
+	    x.className = "menu";
+	  }
+	}
+	</script>
+	
+	<!--Cuerpo de pagina-->	
+	<main>
+	<div id="global">
+	   <section>
+		<div id="slider">
+				<div class="galeria">
+					<div><img src="img/img.jpg"></div>
+					<div><img src="img/slider2.png"></div>
+				</div>
+			</div>
+		</section>
+	<section class="pasos">
+		<div class="pasos-box-1">
+			<p>Inscribite manga de kokemon jasjajdsjajd toy re loco</p>
+		</div>	
+		<div class="pasos-box-2">
+			<p>Paga manga de kokemon jasjajdsjajd toy re loco</p>
+		</div>
+		<div class="pasos-box-3">
+			<p>Y labura manga de kokemon jasjajdsjajd toy re loco</p>
+		</div>
+	</section>
+	</div>
+	</main>
+
+	<!--Footer-->
+	<footer>
+		Andres Agustin 
+		Marcos Cabral 42684487
+		Federico Rodriguez
+	</footer>
+</body>
+</html>
